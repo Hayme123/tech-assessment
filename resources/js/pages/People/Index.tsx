@@ -129,7 +129,7 @@ export default function Index() {
                             </div>
 
                             <Button type="submit" disabled={processing}>
-                                {processing ? 'Saving...' : 'Save Person'}
+                                {processing ? 'Saving...' : 'Save'}
                             </Button>
                         </form>
                     </CardContent>
@@ -138,7 +138,6 @@ export default function Index() {
                 <Card>
                     <CardContent>
                     <Table>
-                        <TableCaption>Saved people entries.</TableCaption>
                         <TableHeader>
                             <TableRow>
                                 <TableHead>First Name</TableHead>
