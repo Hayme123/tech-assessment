@@ -89,6 +89,11 @@ export default function Index() {
                                         }
                                         placeholder="First name"
                                         aria-invalid={Boolean(errors.first_name)}
+                                        className={
+                                            errors.first_name
+                                                ? 'border-destructive ring-3 ring-destructive/20'
+                                                : ''
+                                        }
                                     />
                                     {errors.first_name ? (
                                         <FieldDescription className="text-destructive/80">
@@ -109,6 +114,11 @@ export default function Index() {
                                         }
                                         placeholder="Last name"
                                         aria-invalid={Boolean(errors.last_name)}
+                                        className={
+                                            errors.last_name
+                                                ? 'border-destructive ring-3 ring-destructive/20'
+                                                : ''
+                                        }
                                     />
                                     {errors.last_name ? (
                                         <FieldDescription className="text-destructive/80">
